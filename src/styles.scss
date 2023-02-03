@@ -2,3 +2,69 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.cs-container-voice-note {
+    display: flex;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    justify-content: space-evenly;
+    padding: 10px 0;
+
+    .cs-container-time {
+      height: 100%;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    .cs-container-record {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between !important;
+      width: 100px;
+
+      .cs-record-simulator-small {
+        width: 4px;
+        height: 4px;
+        background-color: #E1E1E1;
+        border-radius: 50%
+      }
+
+      .cs-record-simulator-medium {
+        @extend .cs-record-simulator-small;
+        height: 8px;
+        border-radius: 20px
+      }
+
+      .cs-record-simulator-large {
+        @extend .cs-record-simulator-small;
+        height: 16px;
+        border-radius: 20px
+      }
+
+      .cs-record-simulator-extra-large {
+        @extend .cs-record-simulator-small;
+        height: 32px;
+        border-radius: 20px;
+      }
+    }
+
+    .cs-container-icons-voice-note {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100px;
+
+      .cs-send-chat-btn {
+        background-color: #143455;
+        color: white;
+      }
+    }
+  }
